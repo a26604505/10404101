@@ -1,0 +1,198 @@
+<hrad>
+<meta charset="UTF-8">
+<meta http-equiv="refresh"content="5">
+</head>
+<style>
+
+body
+
+{
+
+background-image:url("google12.jpg");
+
+background-repeat:no-repeat;
+
+background-position:right bottom;
+
+}
+
+</style>
+
+<body>
+
+<h1>Hello World!</h1>
+
+</body>
+<html>
+
+<body>
+
+<h1>老師好</h1>
+
+<script>
+
+alert("作業100分");
+
+</script>
+
+</body>
+
+</html>
+
+<html>
+
+<body>
+
+<script>
+
+document.write("<p>" + Date() + "</p>");
+
+</script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1>1.Joke!</h1>
+
+<p>什麼國家用電不用錢?</p>
+
+<p id="demo" style="display:none">緬甸(免電)</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Anawer!</button>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html><body>
+<h1>2.終極密碼!</h1>
+<form>
+
+請輸入一個數字(1-100): <input type="text" id="number">
+
+</form>
+
+<button type="button" onclick="eval()">Guess!</button>
+
+<script>
+
+var target=Math.floor((Math.random() * 100) + 1);
+
+console.log(target);
+
+function eval(){
+
+if(document.getElementById("number").value > target){alert("猜小一些");}
+
+else if (document.getElementById("number").value < target){alert("猜大一些");}
+
+else{alert("Bingo!");}
+
+}
+
+</script>
+
+</body></html>
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+<h1>3.Joke Part Two!</h1>
+<p id="content">今天是發考卷的日子
+媽媽:「隔壁的小美考了99分」
+兒子:「那算什麼,我比他多一點」</p>
+
+<button type="button" onclick="媽媽()">媽媽</button>
+
+<button type="button" onclick="兒子()">兒子</button>
+
+<script>
+
+function 媽媽(){
+
+document.getElementById("content").innerHTML="「哇!你考了100喔」";
+
+}
+
+function 兒子(){
+
+document.getElementById("content").innerHTML="「不~我考了9.9分」";
+
+}
+
+</script>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+
+<html>
+<h1>4.上下左右!</h1>
+<style>
+
+#animate { width: 50px; height: 50px; position: absolute; background: red; }
+
+</style>
+
+<body onkeydown="eval(event)">
+
+<div id="animate"></div>
+
+<script>
+
+function eval(event) {
+
+var elem = document.getElementById("animate");
+
+var x = elem.offsetTop || 0;
+
+var y = elem.offsetLeft || 0;
+
+var key = event.which || event.keyCode;
+
+switch(key){
+
+case 38:
+
+elem.style.top = (x-30) + 'px';
+
+break;
+
+case 40:
+
+elem.style.top = (x+30) + 'px';
+
+break;
+
+case 37:
+
+elem.style.left = (y-30) + 'px';
+
+break;
+
+case 39:
+
+elem.style.left = (y+30) + 'px';
+
+break;
+
+}
+
+}
+
+</script></body></html>
+
